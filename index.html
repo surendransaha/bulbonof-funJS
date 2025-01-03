@@ -1,0 +1,61 @@
+
+<html>
+    <head>
+        <title> Fun JS - Bulb on and off</title>
+    </head>
+
+    <body>
+
+        <br /><br />
+        <center>
+
+        <h1> Bulb ON / OFF</h1>
+
+        <img id="bulbImage" src="./image/pic_bulboff.gif" />
+
+        <br/><br/>
+
+
+        <button id="bulbButton" onclick="bulbOnChange()">
+            OFF
+        </button>
+
+
+        <br> <br>
+
+        <h1 style="color: brown;">Subscribe to Berry thought</h1>
+
+        </center>
+
+        <script>
+
+            function bulbOnChange(){
+
+                let buttonVal = document.getElementById("bulbButton"); // use innerHTML
+                let imageVal = document.getElementById("bulbImage"); // src
+
+                if(buttonVal.innerHTML == "OFF"){
+
+                    buttonVal.innerHTML = "ON";
+                    imageVal.src = "./image/pic_bulbon.gif"
+
+
+                }else{
+
+                    buttonVal.innerHTML = "OFF";
+                    imageVal.src = "./image/pic_bulboff.gif"
+
+                }
+                
+
+
+
+            }
+
+
+
+        </script>
+
+    </body>
+</html>
+
